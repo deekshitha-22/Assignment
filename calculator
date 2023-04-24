@@ -1,1 +1,38 @@
+print("operations");
+print("1.addition");
+print("2.subtraction");
+print("3.multiplication");
+print("4.division");
+print("5.remainder \n")
+opt=int(input("choose the operation(1 to 4): "))
+a=float(input("\nenter the first number: "))
+b=float(input("enter the second number: "))
+def add(a,b):
+  return a+b
+def sub(a,b):
+  return a-b
+def mul(a,b):
+  return a*b
+def div(a,b):
+  return a/b
+def rem(a,b):
+  return a%b
+def calc():
+  if(opt==1):
+      print("\nthe sum of ",a," and ",b," is: ",add(a,b))
+  elif(opt==2):
+      print("\nthe difference of ",a," and ",b," is: ",sub(a,b))
+  elif(opt==3):
+      print("\nthe product of ",a," and ",b," is: ",mul(a,b))
+  elif(opt==4):
+      print("\nthe quotient of ",a," and ",b," is: ",div (a,b))
+  elif(opt==5):
+      print("\nthe remainder of ",a," / ",b," is: ",rem (a,b))
+  else:
+      print("invalid option")
+
+
+calc();
+
+
 
